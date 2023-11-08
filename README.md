@@ -1,4 +1,13 @@
 
+# Scientific-Computing-with-Python-Projects
+
+Scientific Computing with Python Projects for free code camp to claim certificate
+
+#### Challange one :
+## Arithmetic Formatter
+Create a function that receives a list of strings that are arithmetic problems and returns the problems arranged vertically and side-by-side. The function should optionally take a second argument. When the second argument is set to ```
+True``` the answers should be displayed.
+
 ## Examples
 ### Function call:
 ```Python
