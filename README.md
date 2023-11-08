@@ -1,13 +1,4 @@
 
-# Scientific-Computing-with-Python-Projects
-
-Scientific Computing with Python Projects for free code camp to claim certificate
-
-Challange one :
-## Arithmetic Formatter
-Create a function that receives a list of strings that are arithmetic problems and returns the problems arranged vertically and side-by-side. The function should optionally take a second argument. When the second argument is set to ```
-True``` the answers should be displayed.
-
 ## Examples
 ### Function call:
 ```Python
@@ -21,7 +12,7 @@ arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"])
 -----    ------    ----    -----
 ```
 ## Function call:
-```Python
+```
 arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True)
 ```
 ### output
@@ -48,3 +39,38 @@ The function will return the correct conversion if the supplied problems are pro
   - There should be dashes at the bottom of each problem. The dashes should run along the entire length of each problem individually. (The example above shows what this should look like.)
   
 
+## challlange two:
+
+Write a function named ``` add_time ``` that takes in two required parameters and one optional parameter:
+
+* a start time in the 12-hour clock format (ending in AM or PM)
+- a duration time that indicates the number of hours and minutes
+- (optional) a starting day of the week, case insensitive
+The function should add the duration time to the start time and return the result.
+
+If the result will be the next day, it should show (next day) after the time. If the result will be more than one day later, it should show (n days later) after the time, where "n" is the number of days later
+
+If the function is given the optional starting day of the week parameter, then the output should display the day of the week of the result. The day of the week in the output should appear after the time and before the number of days later.
+
+Below are some examples of different cases the function should handle. Pay close attention to the spacing and punctuation of the results.
+
+## Examples
+### Function call: 
+```Python
+add_time("3:00 PM", "3:10")
+add_time("11:30 AM", "2:32", "Monday")
+add_time("11:43 AM", "00:20")
+add_time("10:10 PM", "3:30")
+add_time("11:43 PM", "24:20", "tueSday")
+add_time("6:30 PM", "205:12")
+
+```
+### output:
+```Python 
+6:10 PM
+2:02 PM, Monday
+12:03 PM
+1:40 AM (next day)
+12:03 AM, Thursday (2 days later)
+7:42 AM (9 days later)
+```
